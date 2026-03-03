@@ -1,0 +1,24 @@
+#algoritmo para calcular raízes e vértices de uma função do 2° Grau
+import math
+
+a= float(input("valor a: "))
+b= float(input("valor b: "))
+c= float(input("valor c: "))
+
+delta = (b**2) - (4*a*c)
+if delta < 0:
+    print("Não há raízes reais ")
+    Xv = -b / (2 * a)
+    Yv = -delta / (4 * a)
+    print("Xv = ", Xv, )
+    print("Yv = ", Yv, )
+else:
+    x1= (-b + math.sqrt(delta))/(2*a)
+    x2= (-b - math.sqrt(delta))/(2*a)
+    Xv= -b / (2*a)
+    Yv= -delta / (4*a)
+
+    print("X1 = ", x1, )
+    print("X2 = ", x2, )
+    print("Xv = ", Xv, )
+    print("Yv = ", Yv, )
