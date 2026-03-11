@@ -1,0 +1,26 @@
+'''
+algoritimo para uma loja realizar a leitura e armazenamento de dados, somar vendas, calcular média e identificar maior venda.
+Ao final exibirá o total de vendas, média e maior venda. (ao digitar "0", encerra-se o algoritimo).
+'''
+
+n = int(input("Estimativa de vendas: "))
+vendas = [0 for x in range(n)]
+
+cont = 0
+maior_venda = 0
+soma = 0
+for i in range (n):
+    vendas[i] = float(input(f"Venda {i+1} :"))
+    if vendas[i] == 0:
+        break
+    else:
+        soma = soma + vendas[i]
+        cont = cont + 1
+        if vendas[i] > maior_venda:
+            maior_venda = vendas[i]
+
+
+print (f"Total de vendas: {soma}")
+media = soma / cont
+print (f"Média das vendas: {media:.2f}")
+print (f"Maior venda: {maior_venda}")
