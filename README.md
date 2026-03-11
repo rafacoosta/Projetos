@@ -1,2 +1,3 @@
 # Projeto
-Algoritmos em Python // Objetivo: Demonstração de conhecimento
+Desenvolvi pequenos projetos em Python aplicando conceitos de lógica de programação, estruturas condicionais e repetitivas, vetores e matrizes.
+Simulando sistemas simples como controle de estoque, cadastro de funcionários e análise de dados.
