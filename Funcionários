@@ -1,0 +1,28 @@
+'''
+Uma empresa precisa registrar funcionários e armazenar:nome, cargo e salário.
+Após isso o sistema deve mostrar: todos os funcionários, média salarial e quem recebe acima da média
+'''
+
+func = int(input("N° de funcionários a registrar: "))
+
+nome = [0 for x in range(func)]
+cargo = [0 for x in range(func)]
+salario = [0 for x in range(func)]
+
+soma_salário = 0
+for i in range (func):
+    print (f"Funcionário {i+1}:")
+    nome[i] = input("Nome: ")
+    cargo[i] = input("Cargo: ")
+    salario[i] = float(input("Salário:"))
+    soma_salário = salario[i] + soma_salário
+
+media = soma_salário / func
+
+for i in range (func):
+    print (f"Funcioário: {nome[i]} | Salário: {salario[i]}")
+print (f"Média salarial: {media}")
+print (f"Acima da média")
+for i in range (func):
+    if salario [i] > media:
+        print (nome[i])
