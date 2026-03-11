@@ -1,3 +1,2 @@
 # Projetos
-Algoritmos em Python //
-Objetivo: Demonstração de conhecimento
+Algoritmos em Python // Objetivo: Demonstração de conhecimento
